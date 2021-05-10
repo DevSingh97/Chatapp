@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+#panel{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+}
+
+#online{
+    width: 20%;
+    height: 100%;
+    padding: 40px 30px;
+    background-color: #fff;
+}
+
+#online hr{
+    margin-top: 15px;
+}
+
+#onlinelist{
+    width: 100%;
+    height: 90%;
+    margin-top: 30px;
+    /* background-color: red; */
+}
+
+#messagebar{
+    width: 80%;
+    height: 100%;
+    background-image: url(https://thumbs.dreamstime.com/b/social-media-icon-pattern-background-doodle-icons-sketchy-notepaper-hand-drawing-set-backdrop-fabric-wallpaper-vector-54677606.jpg);
+    background-size: cover;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.9);
+    position: relative;
+}
+
+#online h3{
+    color: rgb(62, 182, 114);
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.user::before{
+    content: '🟢';
+    font-size: 7px;
+    margin-right: 20px;
+}
+
+.msg{
+    width: 80%;
+    min-height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(240, 239, 228);
+}
+
+.msg{
+    padding: 10px 20px;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+.msg h4{
+    
+    position: absolute;
+    margin-top:-30px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-weight: 350;
+    margin-left: -15px;
+}
+
+
+#msgpanel{
+    width: 100%;
+    height: 82%;
+    overflow-y: auto;
+    padding: 20px 0;
+    /*background-color: red; */
+}
+
+#form{
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+}
+
+textarea{
+    width: 90%;
+    height: 120px;
+    border-radius: 5px;
+    resize: none;
+    border: none;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(87, 167, 114);
+}
+.istyping{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(100, 184, 128);
+    font-size: 20px;
+    position: absolute;
+}
+.me{
+    background-color: rgb(87, 167, 114) ;
+    color: #fff;
+}
+.me>h4{
+    right: 10px;
+    color: #fff;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    #back{
+        padding: 0;
+    }
+    #panel{
+        width: 100%;
+        height: 100%;
+    }
+    #online{
+        width:100%;
+        height: 100px;
+        position: absolute;
+        margin-top: -10px;
+        display: flex;
+        align-items: center;
+        
+        
+       
+    }
+    #onlinelist{
+    width: 100%;
+    height: 20px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    
+
+    }
+    #online h3{
+        margin-left: 250px;
+        
+        margin: 0 auto;
+    }
+    #online hr{
+        display: none;
+    }
+    .user{
+        margin: 0px  15px;
+        padding: 0;
+    }
+    .user::before{
+        margin-right: 10px;
+    }
+    
+    #messagebar{
+       
+        width: 100%;
+        height: 89%;
+        margin-top: auto;
+       
+       
+    }
+    #msgpanel{
+        width: inherit;
+        height: calc(100% - 60px)
+    
+    }
+    .msg{
+        width: 100%;
+        overflow-wrap: break-word;
+        
+    }
+    textarea{
+        padding:15px 15px;
+        width: 85%;
+        height: 50px;
+        line-height: 20px;
+        border-radius: 50px;
+        
+    }
+    #btn{
+        margin-left: 20px;
+       
+    }
+    .istyping{
+        margin-top:5px;
+        margin:0 auto;
+        margin-left: -25px;
+        margin-top:-10px;
+        
+    }
+    .istyping>.typing{
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
